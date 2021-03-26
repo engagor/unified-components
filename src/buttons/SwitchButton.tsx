@@ -51,7 +51,8 @@ const SwitchButton = (props: PropsWithChildren<SwitchButtonProps>): ReactElement
             onClick={props.onToggle}
             type="button"
             role="switch"
-            aria-checked={props.checked}
+            aria-checked={props.checked ? 'true' : 'false'}
+            aria-label={props.checked ? 'on' : 'off'}
         >
             <span className={toggleClassNames.join(' ')} />
         </button>
