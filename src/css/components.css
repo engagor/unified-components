@@ -120,6 +120,10 @@
     line-height: 1rem !important;
 }
 
+.leading-sm-1 {
+    line-height: 0.85rem !important;
+}
+
 /**
  * Outline
  */

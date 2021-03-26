@@ -81,11 +81,11 @@ const Button = (props: PropsWithChildren<ButtonProps>): ReactElement => {
     const size = props.size ?? 'normal';
 
     if (size === 'small') {
-        buttonClasses.push('ph-8', 'pv-4', 'text-sm-1');
+        buttonClasses.push('ph-8', 'pv-4', 'text-sm-1', 'leading-sm-1');
 
     }
     if (size === 'normal') {
-        buttonClasses.push('ph-16', 'pv-8', 'text-base');
+        buttonClasses.push('ph-16', 'pv-8', 'text-base', 'leading-base');
     }
 
     buttonClasses.push(cursorClass);
