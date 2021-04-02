@@ -23,7 +23,7 @@
         "sourceMap": true,
         "typeRoots": ["node_modules/@types"],
         "declaration": true,
-        "declarationDir": "dist/types"
+        "outDir": "./dist/"
     },
     "include": [
         "src"

@@ -7,14 +7,14 @@
   "directories": {
     "dist": "dist"
   },
-  "scripts": {
+    "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "storybook-docs": "start-storybook --docs",
     "upgrade-interactive": "ncu",
     "update-packages": "ncu -u",
-    "build": "webpack --mode=development",
+    "build": "webpack --mode=production",
     "prepublishOnly": "npm run build && npm run deploy-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "release": "npm version $TYPE -m '📦 Upgrade package to %s' && npm publish && git push && git push --tags",
