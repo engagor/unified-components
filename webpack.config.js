@@ -17,7 +17,7 @@ module.exports = {
     entry: getEntries('src/**/*.ts*'),
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "[name]"
+        filename: "[name].js"
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".css"]
