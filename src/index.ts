@@ -8,4 +8,4 @@ export {
     Button,
     SwitchButton,
     ButtonGroup
-}
+};

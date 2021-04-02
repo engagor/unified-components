@@ -2,7 +2,11 @@
   "name": "@clarabridge/unified-react-components",
   "version": "0.0.7",
   "description": "Collection of Engage reusable components",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+    "directories": {
+        "src": "src",
+        "dist": "dist"
+    },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
