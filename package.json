@@ -1,6 +1,6 @@
 {
   "name": "@clarabridge/unified-react-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Collection of Engage reusable components",
   "main": "dist/index.js",
   "scripts": {
