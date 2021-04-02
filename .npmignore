@@ -1,4 +1,5 @@
 # generated sass/css files
+src/
 build/
 /app/cache/*
 .sass-cache/*
