@@ -1,6 +1,8 @@
 # generated sass/css files
 src/
 
+.storybook/
+.env
 webpack.config.js
 tsconfig.json
 .editorconfig
