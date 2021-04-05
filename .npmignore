@@ -1,20 +1,14 @@
 # generated sass/css files
 src/
-build/
-/app/cache/*
-.sass-cache/*
 
-.sass-cache
+webpack.config.js
+tsconfig.json
+.editorconfig
+.eslintrc.js
+.gitignore
 
 # mac files
 *.DS_Store
-
-/Gemfile.lock
-.bundle/
-
-.idea/
-.idea
-.tags*
 
 .sync
 
@@ -22,5 +16,8 @@ build/
 \.sublime-workspace
 *.sublime-workspace
 .vscode
+.idea/
+.idea
+.tags*
 
 /tmp/webpack
