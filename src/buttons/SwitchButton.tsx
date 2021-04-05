@@ -4,7 +4,7 @@ import '../css/components.css';
 
 export type SwitchButtonProps = {
     checked: boolean;
-    onToggle: () => void;
+    onToggle: (event: React.MouseEvent<HTMLButtonElement>) => void;
     disabled?: boolean;
     className?: string;
 };
@@ -48,7 +48,7 @@ const SwitchButton = (props: PropsWithChildren<SwitchButtonProps>): ReactElement
     return (
         <button
             className={switchButtonClassNames.join(' ')}
-            onClick={props.onToggle}
+            onClick={(event) => {props.onToggle(event)}}
             type="button"
             role="switch"
             aria-checked={props.checked ? 'true' : 'false'}
