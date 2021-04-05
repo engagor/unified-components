@@ -6,7 +6,7 @@ https://engagor.github.io/unified-components-react
 
 ## Installation
 
-Clarabridge Engage Unified Components can be installed as an [npm package](https://www.npmjs.com/package/@clarabridge/unified-components):
+Clarabridge Engage Unified Components can be installed as an [npm package](https://www.npmjs.com/package/@clarabridge/unified-react-components):
 
 ```bash
 $ npm i @clarabridge/unified-react-components
@@ -14,7 +14,7 @@ $ npm i @clarabridge/unified-react-components
 
 ## Basic usage
 
-`import { Input } from @clarabridge/unified-react-components`
+`import { SwitchButton, Button } from @clarabridge/unified-react-components`
 
 ## Contributing
 
