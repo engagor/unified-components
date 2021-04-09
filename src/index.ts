@@ -4,7 +4,7 @@ import Button from './buttons/Button';
 import ButtonGroup from './buttons/ButtonGroup';
 import SwitchButton from './buttons/SwitchButton';
 
-export default {
+export {
     Button,
     SwitchButton,
     ButtonGroup
