@@ -48,11 +48,12 @@ export default function SwitchButton(props: PropsWithChildren<SwitchButtonProps>
     return (
         <button
             className={switchButtonClassNames.join(' ')}
-            onClick={(event) => {props.onToggle(event)}}
+            onClick={!props.disabled ? props.onToggle : undefined}
             type="button"
             role="switch"
             aria-checked={props.checked ? 'true' : 'false'}
             aria-label={props.checked ? 'on' : 'off'}
+            aria-disabled={props.disabled}
         >
             <span className={toggleClassNames.join(' ')} />
         </button>
