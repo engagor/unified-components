@@ -4,12 +4,10 @@ export type ButtonGroupProps = {
     className?: string;
 };
 
-const ButtonGroup = (props: PropsWithChildren<ButtonGroupProps>): ReactElement => {
+export default function ButtonGroup (props: PropsWithChildren<ButtonGroupProps>): ReactElement {
     return (
         <div className={`d-flex ${props.className || ''}`}>
             {props.children}
         </div>
     );
 }
-
-export default ButtonGroup;

@@ -11,7 +11,7 @@
     "storybook-docs": "start-storybook --docs",
     "upgrade-interactive": "ncu",
     "update-packages": "ncu -u",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=development",
     "prepublishOnly": "npm run build && npm run deploy-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "release": "npm version $TYPE -m '📦 Upgrade package to %s' && npm publish && git push && git push --tags",

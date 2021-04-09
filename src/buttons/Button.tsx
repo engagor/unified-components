@@ -60,7 +60,7 @@ const stylesPerMode: Record<string, Record<string, string[]>> = {
     },
 }
 
-const Button = (props: PropsWithChildren<ButtonProps>): ReactElement => {
+export default function Button (props: PropsWithChildren<ButtonProps>): ReactElement {
     const buttonClasses = [
         'border-solid',
         'border-2',
@@ -97,5 +97,3 @@ const Button = (props: PropsWithChildren<ButtonProps>): ReactElement => {
         </button>
     );
 }
-
-export default Button;

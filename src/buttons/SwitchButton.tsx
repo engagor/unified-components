@@ -14,7 +14,7 @@ const stylesPerMode: Record<string, string[]> = {
     unchecked: ['bg-charcoal-color-200', 'pr-16'],
 }
 
-const SwitchButton = (props: PropsWithChildren<SwitchButtonProps>): ReactElement => {
+export default function SwitchButton(props: PropsWithChildren<SwitchButtonProps>): ReactElement {
     let switchButtonClassNames = [
         'box-sizing-box',
         'p-relative',
@@ -58,5 +58,3 @@ const SwitchButton = (props: PropsWithChildren<SwitchButtonProps>): ReactElement
         </button>
     );
 }
-
-export default SwitchButton;
