@@ -1,23 +1,12 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const path = require('path');
-const glob = require('glob');
-
-function getEntries(pattern) {
-    const entries = {};
-
-    glob.sync(pattern).forEach((file) => {
-        entries[file.replace('src/', '')] = path.join(__dirname, file);
-    });
-
-    return entries;
-}
 
 module.exports = {
-    entry: getEntries('src/**/*.ts*'),
+    entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "[name].js"
+        filename: "index.js"
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".css"]
