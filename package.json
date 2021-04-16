@@ -11,7 +11,7 @@
     "storybook-docs": "start-storybook --docs",
     "upgrade-interactive": "ncu",
     "update-packages": "ncu -u",
-    "build": "webpack --mode=development",
+    "build": "webpack --mode=production",
     "prepublishOnly": "npm run build && npm run deploy-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "release": "npm version $TYPE -m '📦 Upgrade package to %s' && npm publish && git push && git push --tags",
@@ -37,6 +37,7 @@
   "dependencies": {
     "@clarabridge/unified-icons": "^8.1.0",
     "@clarabridge/unified-ui": "^5.2.0",
+    "@clarabridge/unified-ui-tailwind": "^0.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
