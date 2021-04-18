@@ -1,4 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const path = require('path');
 
@@ -32,4 +34,10 @@ module.exports = {
             chunkFilename: '[id].css',
         }),
     ],
+    optimization: {
+        minimizer: [
+            new TerserPlugin(),
+            new CssMinimizerPlugin(),
+        ],
+    },
 };
