@@ -15,6 +15,7 @@ module.exports = {
             "files": ["*.js", "*.jsx"],
             "rules": {
                 "@typescript-eslint/explicit-function-return-type": "off",
+                "@typescript-eslint/explicit-module-boundary-types": "off",
             }
         }
     ],
@@ -34,8 +35,7 @@ module.exports = {
         "react-hooks",
         "import",
     ],
-    "globals": {
-    },
+    "globals": {},
     "rules": {
         "strict": 0,
         "no-useless-escape": "off",
@@ -46,14 +46,16 @@ module.exports = {
         "react-hooks/exhaustive-deps": "warn",
         "keyword-spacing": ["error"],
         "linebreak-style": ["error", "unix"],
-        "no-console": ["error", {"allow": ["warn", "error"]}],
-        "@typescript-eslint/ban-ts-ignore": "off",
+        "no-console": ["error", {"allow": ["info", "warn", "error"]}],
         "@typescript-eslint/ban-ts-comment": [
             "error",
-            { "ts-expect-error": "allow-with-description" },
+            {
+                "ts-ignore": false,
+                "ts-expect-error": "allow-with-description"
+            },
         ],
         "@typescript-eslint/camelcase": "off",
         "no-prototype-builtins": "off",
-        "no-unused-vars": "error",
+        "@typescript-eslint/no-unused-vars": "error",
     }
 };
