@@ -36,7 +36,6 @@
   "homepage": "https://github.com/engagor/unified-components-react#readme",
   "dependencies": {
     "@clarabridge/unified-icons": "^8.1.0",
-    "@clarabridge/unified-ui": "^5.2.0",
     "@clarabridge/unified-ui-tailwind": "^0.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
@@ -55,6 +54,7 @@
     "css-minimizer-webpack-plugin": "^1.3.0",
     "mini-css-extract-plugin": "^1.3.9",
     "react-docgen-typescript": "^1.21.0",
+    "storybook-dark-mode": "^1.0.7",
     "terser-webpack-plugin": "^4.2.3",
     "ts-loader": "^8.0.17",
     "typescript": "^4.2.3",
