@@ -1,62 +1,69 @@
 {
-  "name": "@clarabridge/unified-react-components",
-  "version": "0.2.0",
-  "description": "Collection of Engage reusable components",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "storybook-docs": "start-storybook --docs",
-    "upgrade-interactive": "ncu",
-    "update-packages": "ncu -u",
-    "build": "webpack --mode=development",
-    "prepublishOnly": "npm run build && npm run deploy-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
-    "release": "npm version $TYPE -m '📦 Upgrade package to %s' && npm publish && git push && git push --tags",
-    "release-major": "TYPE=major npm run release",
-    "release-minor": "TYPE=minor npm run release",
-    "release-patch": "TYPE=patch npm run release"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/engagor/unified-components-react.git"
-  },
-  "keywords": [
-    "engage",
-    "components",
-    "react"
-  ],
-  "author": "Thomas Van Kerckvoorde <thomas.vankerckvoorde@clarabridge.com>",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "bugs": {
-    "url": "https://github.com/engagor/unified-components-react/issues"
-  },
-  "homepage": "https://github.com/engagor/unified-components-react#readme",
-  "dependencies": {
-    "@clarabridge/unified-icons": "^8.1.0",
-    "@clarabridge/unified-ui": "^5.2.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "tooltip.js": "^1.3.3"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.13.8",
-    "@storybook/addon-a11y": "^6.1.21",
-    "@storybook/addon-actions": "^6.1.21",
-    "@storybook/addon-essentials": "^6.1.21",
-    "@storybook/addon-links": "^6.1.21",
-    "@storybook/addons": "^6.1.21",
-    "@storybook/react": "^6.1.21",
-    "@storybook/storybook-deployer": "^2.8.7",
-    "@types/react": "^17.0.2",
-    "babel-loader": "^8.2.2",
-    "mini-css-extract-plugin": "^1.3.9",
-    "react-docgen-typescript": "^1.21.0",
-    "ts-loader": "^8.0.17",
-    "typescript": "^4.2.3",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^4.5.0"
-  }
+    "name": "@clarabridge/unified-react-components",
+    "version": "0.2.0",
+    "description": "Collection of Engage reusable components",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx --cache --cache-strategy content",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook",
+        "storybook-docs": "start-storybook --docs",
+        "upgrade-interactive": "ncu",
+        "update-packages": "ncu -u",
+        "build": "webpack --mode=development",
+        "prepublishOnly": "npm run build && npm run deploy-storybook",
+        "deploy-storybook": "storybook-to-ghpages",
+        "release": "npm version $TYPE -m '📦 Upgrade package to %s' && npm publish && git push && git push --tags",
+        "release-major": "TYPE=major npm run release",
+        "release-minor": "TYPE=minor npm run release",
+        "release-patch": "TYPE=patch npm run release"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/engagor/unified-components-react.git"
+    },
+    "keywords": [
+        "engage",
+        "components",
+        "react"
+    ],
+    "author": "Thomas Van Kerckvoorde <thomas.vankerckvoorde@clarabridge.com>",
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "bugs": {
+        "url": "https://github.com/engagor/unified-components-react/issues"
+    },
+    "homepage": "https://github.com/engagor/unified-components-react#readme",
+    "dependencies": {
+        "@clarabridge/unified-icons": "^8.1.0",
+        "@clarabridge/unified-ui": "^5.2.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "tooltip.js": "^1.3.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.8",
+        "@storybook/addon-a11y": "^6.1.21",
+        "@storybook/addon-actions": "^6.1.21",
+        "@storybook/addon-essentials": "^6.1.21",
+        "@storybook/addon-links": "^6.1.21",
+        "@storybook/addons": "^6.1.21",
+        "@storybook/react": "^6.1.21",
+        "@storybook/storybook-deployer": "^2.8.7",
+        "@types/react": "^17.0.2",
+        "@typescript-eslint/eslint-plugin": "^4.22.0",
+        "@typescript-eslint/parser": "^4.22.0",
+        "babel-loader": "^8.2.2",
+        "eslint": "^7.17.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-react": "^7.23.2",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "mini-css-extract-plugin": "^1.3.9",
+        "react-docgen-typescript": "^1.21.0",
+        "ts-loader": "^8.0.17",
+        "typescript": "^4.2.3",
+        "webpack": "^4.46.0",
+        "webpack-cli": "^4.5.0"
+    }
 }
