@@ -1,9 +1,9 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
 
-import '../css/components.css';
-import Button, { ButtonProps } from '../buttons/Button';
-import ButtonGroup, { ButtonGroupProps } from '../buttons/ButtonGroup';
+import '../src/css/components.css';
+import Button, { ButtonProps } from '../src/buttons/Button';
+import ButtonGroup, { ButtonGroupProps } from '../src/buttons/ButtonGroup';
 
 export default {
     title: 'Button',

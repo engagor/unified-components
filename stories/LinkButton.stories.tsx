@@ -1,8 +1,8 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
 
-import '../css/components.css';
-import LinkButton, {LinkButtonProps} from "../buttons/LinkButton";
+import '../src/css/components.css';
+import LinkButton, {LinkButtonProps} from "../src/buttons/LinkButton";
 
 export default {
     title: 'LinkButton',

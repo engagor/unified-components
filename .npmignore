@@ -1,5 +1,6 @@
 # generated sass/css files
 src/
+stories/
 
 .storybook/
 .env
