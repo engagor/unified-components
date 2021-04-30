@@ -18,9 +18,24 @@ $ npm i @clarabridge/unified-react-components
 
 ## Contributing
 
-1. Do your changes on a feature branch
-2. Make a PR for your commit
-3. Get a coffee and wait for reviews
+Components that are added to this repository should be pre-approved by the design team. Only unified components that adhere to the global brand guidelines are added.
+For an overview of these components refer to 
+https://clarabridge.atlassian.net/wiki/spaces/PD/pages/884703293/System+Log
+
+1. Do your changes on a feature branch `feature-{ticket number}-{optional description}`
+2. Make sure your changes are covered by a test
+3. Make a PR for your commit
+4. Assign a reviewer from the Design team (@goOve)
+5. Follow up on the review and the remarks
+6. Merge after approval and make a release
+
+### Reviewing
+
+The design review should focus on whether or not the design guidelines were correctly implemented.
+- Is it consistent with the mockups? 
+- Is the component following the accessbility guidelines?  
+
+When needed the design reviewer circles back to the design team about the implementation remarks. An interaction can't work as envisioned? Then it is up to the design reviewer to propose changes and work out changes to the guidelines.
 
 ## How to make a release
 
