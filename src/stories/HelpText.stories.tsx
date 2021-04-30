@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
 
-import HelpText, {HelpTextProps} from "../help/HelpText";
+import HelpText, {HelpTextProps} from "../tooltips/HelpText";
 import '../css/tooltip.css';
 
 export default {

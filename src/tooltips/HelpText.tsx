@@ -1,4 +1,4 @@
-import React, {PropsWithChildren, ReactElement} from 'react';
+import React, { PropsWithChildren, ReactElement } from 'react';
 import { Options } from 'tooltip.js';
 import Tooltip from "../utils/Tooltip";
 
@@ -51,7 +51,8 @@ export default function HelpText(props: HelpTextProps): ReactElement {
     ];
 
     let content = (
-        <span className={`${classNames.join(' ')} inline_help_${props.color} ${props.className || ''}`} id={`help_inline_${props.id}`}>
+        <span className={`${classNames.join(' ')} inline_help_${props.color} ${props.className || ''}`}
+              id={`help_inline_${props.id}`}>
             ?
         </span>
     );
