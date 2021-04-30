@@ -1,4 +1,5 @@
 import './css/components.css';
+import '@clarabridge/unified-ui-tailwind/dist/utilities.css';
 
 import Button from './buttons/Button';
 import ButtonGroup from './buttons/ButtonGroup';

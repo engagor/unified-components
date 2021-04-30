@@ -1,8 +1,10 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 const TerserPlugin = require("terser-webpack-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
-const path = require('path');
+const path = require('path')
+const glob = require('glob')
 
 module.exports = {
     entry: './src/index.ts',
@@ -32,6 +34,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'index.css',
             chunkFilename: '[id].css',
+        }),
+        new PurgecssPlugin({
+            paths: glob.sync(`./src/**/*`,  { nodir: true }),
         }),
     ],
     optimization: {
