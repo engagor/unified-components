@@ -2,8 +2,12 @@ import '../css/arrow.css';
 
 import React, { forwardRef } from "react";
 
-export default forwardRef<HTMLDivElement>(
-    (props, ref) => {
-        return <div className="arrow" ref={ref} />;
+type Props = {
+    className?: string;
+}
+
+export default forwardRef<HTMLDivElement, Props>(
+    ({ className }, ref) => {
+        return <div className={`arrow ${className ?? ''}`} ref={ref} />;
     }
 )
