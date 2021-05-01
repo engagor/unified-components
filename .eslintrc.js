@@ -9,6 +9,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:jsx-a11y/recommended",
     ],
     "overrides": [
         {
@@ -34,6 +35,7 @@ module.exports = {
         "react",
         "react-hooks",
         "import",
+        "jsx-a11y",
     ],
     "globals": {},
     "rules": {
