@@ -15,6 +15,10 @@ export type TooltipProps = PropsWithChildren<
 export default function Tooltip({ content, appendTo, placement, visible, children }: TooltipProps): ReactElement | null {
     const [arrow, setArrow] = useState<HTMLDivElement | null>(null);
 
+    if (!appendTo) {
+        appendTo = document.body;
+    }
+
     if (!placement) {
         placement = 'top';
     }

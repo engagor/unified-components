@@ -14,6 +14,10 @@ export type HelpTextProps = PropsWithChildren<{
 export default function HelpText({ title, content, appendTo, placement, visible, children }: HelpTextProps): ReactElement | null {
     const [arrow, setArrow] = useState<HTMLDivElement | null>(null);
 
+    if (!appendTo) {
+        appendTo = document.body;
+    }
+
     if (!placement) {
         placement = 'right';
     }

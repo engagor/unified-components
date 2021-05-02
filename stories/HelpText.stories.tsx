@@ -29,7 +29,7 @@ const Template: Story<HelpTextProps> = (args) => {
     );
 
     return (
-        <HelpText title={args.title} content={content} placement={args.placement}>
+        <HelpText {...args} title={args.title} content={content} placement={args.placement}>
             {args.children}
         </HelpText>
     );
