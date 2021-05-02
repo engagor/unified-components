@@ -1,7 +1,7 @@
 import React, { isValidElement, PropsWithChildren, ReactElement, useState } from 'react';
-import Tippy from "@tippyjs/react/headless";
-import Placement from "./Placement";
-import Arrow from "./Arrow";
+import Tippy from '@tippyjs/react/headless';
+import Placement from './Placement';
+import Arrow from './Arrow';
 
 export type TooltipProps = PropsWithChildren<
     {

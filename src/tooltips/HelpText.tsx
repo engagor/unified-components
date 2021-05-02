@@ -1,7 +1,7 @@
 import React, { isValidElement, PropsWithChildren, ReactElement, useState } from 'react';
 import Tippy from '@tippyjs/react/headless';
-import Arrow from "./Arrow";
-import Placement from "./Placement";
+import Arrow from './Arrow';
+import Placement from './Placement';
 
 export type HelpTextProps = PropsWithChildren<{
     title?: string | ReactElement;
