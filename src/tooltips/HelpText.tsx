@@ -6,11 +6,12 @@ import Placement from './Placement';
 export type HelpTextProps = PropsWithChildren<{
     title?: string | ReactElement;
     content: string | ReactElement;
+    appendTo?: 'parent' | Element | ((ref: Element) => Element)
     placement?: Placement;
     visible?: boolean;
 }>;
 
-export default function HelpText({ title, content, placement, visible, children }: HelpTextProps): ReactElement | null {
+export default function HelpText({ title, content, appendTo, placement, visible, children }: HelpTextProps): ReactElement | null {
     const [arrow, setArrow] = useState<HTMLDivElement | null>(null);
 
     if (!placement) {
@@ -53,8 +54,8 @@ export default function HelpText({ title, content, placement, visible, children 
         <Tippy
             placement={placement}
             visible={visible}
+            appendTo={appendTo}
             popperOptions={popperOptions}
-            className={className.join(' ')}
             render={
                 (attrs) => {
                     if (title) {
