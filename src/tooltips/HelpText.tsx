@@ -46,10 +46,6 @@ export default function HelpText({ title, content, appendTo, placement, visible,
         ],
     };
 
-    const className = [
-        'position-relative'
-    ];
-
     return (
         <Tippy
             placement={placement}
