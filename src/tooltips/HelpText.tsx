@@ -1,77 +1,77 @@
-import React, { PropsWithChildren, ReactElement } from 'react';
-import { Options } from 'tooltip.js';
-import Tooltip from "../utils/Tooltip";
+import React, { isValidElement, PropsWithChildren, ReactElement, useState } from 'react';
+import Tippy from '@tippyjs/react/headless';
+import Arrow from './Arrow';
+import Placement from './Placement';
 
 export type HelpTextProps = PropsWithChildren<{
-    text: string;
-    color?: string;
-    id?: string;
-    placement?: Options['placement'];
-    className?: string;
+    title?: string | ReactElement;
+    content: string | ReactElement;
+    placement?: Placement;
+    visible?: boolean;
 }>;
 
-const defaultProps: HelpTextProps = {
-    text: '',
-    color: 'black',
-    id: '',
-    placement: 'right',
-};
+export default function HelpText({ title, content, placement, visible, children }: HelpTextProps): ReactElement | null {
+    const [arrow, setArrow] = useState<HTMLDivElement | null>(null);
 
-export default function HelpText(props: HelpTextProps): ReactElement {
-    const getTemplate = (): string => {
-        return `
-            <div class="popover bg-white box-shadow-default rounded-4 w-max-280 p-8" role="tooltip">
-                <div class="tooltip-arrow arrow"></div>
-                <div class="popover-content">
-                    <div class='tooltip-inner'></div>
-                </div>
-            </div>
-        `;
+    if (!placement) {
+        placement = 'right';
+    }
+
+    if (!children) {
+        const classNames = [
+            'd-flex',
+            'align-items-center',
+            'justify-center',
+            'bg-charcoal-color-200',
+            'rounded-full',
+            'text-white',
+            'font-bold',
+            'w-16',
+            'h-16',
+            'text-sm-2',
+            'cursor-pointer',
+        ];
+
+        children = <span className={`${classNames.join(' ')}}`}>?</span>;
+    }
+
+    if (!isValidElement(children)) {
+        return null;
+    }
+
+    const popperOptions = {
+        modifiers: [
+            { name: 'arrow', options: { element: arrow } },
+        ],
     };
 
-    // We do this extra guard because if someone sends null or empty string,
-    // React's default props will not kick in (only on undefined).
-    let placementString = props.placement;
-    if (!placementString) {
-        placementString = defaultProps.placement;
-    }
-
-    const classNames = [
-        'd-flex',
-        'align-items-center',
-        'justify-center',
-        'bg-charcoal-color-200',
-        'rounded-full',
-        'text-white',
-        'font-bold',
-        'w-16',
-        'h-16',
-        'text-sm-2',
-        'cursor-pointer',
+    const className = [
+        'position-relative'
     ];
 
-    let content = (
-        <span className={`${classNames.join(' ')} inline_help_${props.color} ${props.className || ''}`}
-              id={`help_inline_${props.id}`}>
-            ?
-        </span>
-    );
-
-    if (props.children) {
-        content = <span className="tooltip-wrapper">{props.children}</span>;
-    }
-
     return (
-        <Tooltip
-            container={document.body}
-            title={props.text}
-            html={true}
-            template={getTemplate()}
-            placement={placementString}
-        >
-            {content}
-        </Tooltip>
-    );
-};
+        <Tippy
+            placement={placement}
+            visible={visible}
+            popperOptions={popperOptions}
+            className={className.join(' ')}
+            render={
+                (attrs) => {
+                    if (title) {
+                        title = <h2 className="text-base font-bold m-0 mb-8">{title}</h2>;
+                    }
 
-HelpText.defaultProps = defaultProps;
+                    return (
+                        <article className="bg-white box-shadow-default rounded-4 w-max-280 p-16" role="tooltip" {...attrs}>
+                            {title}
+                            <section className="text-base font-normal">{content}</section>
+                            <Arrow ref={(node) => setArrow(node)} />
+                        </article>
+                    );
+                }
+            }
+        >
+            {children}
+        </Tippy>
+    );
+}

@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactElement } from "react";
+import React, { PropsWithChildren, ReactElement } from 'react';
 
 export type LinkButtonProps = {
     mode: 'default' | 'primary' | 'secondary' | 'danger';
