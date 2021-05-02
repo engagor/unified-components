@@ -63,5 +63,6 @@ module.exports = {
         'object-curly-spacing': ['error', 'always'],
         'no-multiple-empty-lines': ['error', { 'max': 1 }],
         'quotes': ['error', 'single'],
+        'indent': ['error', 4],
     }
 };
