@@ -7,6 +7,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx --cache --cache-strategy content",
+        "lint-fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --cache --cache-strategy content --fix",
         "type-check": "tsc --noEmit -p tsconfig.json",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",

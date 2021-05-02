@@ -59,5 +59,6 @@ module.exports = {
         "@typescript-eslint/camelcase": "off",
         "no-prototype-builtins": "off",
         "@typescript-eslint/no-unused-vars": "error",
+        "eol-last": 2
     }
 };
