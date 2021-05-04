@@ -22,6 +22,9 @@ Components that are added to this repository should be pre-approved by the desig
 For an overview of these components refer to 
 https://clarabridge.atlassian.net/wiki/spaces/PD/pages/884703293/System+Log
 
+![Unified UI Diagram](https://user-images.githubusercontent.com/2686028/116995707-b08fe380-acda-11eb-8bf2-0e7be0afe92d.jpg)
+https://miro.com/app/board/o9J_lJ6IxlE=/?fromRedirect=1
+
 1. Do your changes on a feature branch `feature-{ticket number}-{optional description}`
 2. Make sure your changes are covered by a test
 3. Make a PR for your commit
