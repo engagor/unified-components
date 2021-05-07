@@ -40,7 +40,7 @@
     "homepage": "https://github.com/engagor/unified-components-react#readme",
     "dependencies": {
         "@clarabridge/unified-icons": "^8.1.0",
-        "@clarabridge/unified-ui": "^5.2.0",
+        "@clarabridge/unified-ui-tailwind": "0.0.1",
         "@tippyjs/react": "^4.2.5",
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
