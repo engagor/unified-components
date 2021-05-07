@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from 'react';
 
 type DropdownItem = {
     level: number;
@@ -10,7 +10,7 @@ type DropdownItem = {
         | React.ReactChild[];
 };
 
-export default function DropdownItem(props: DropdownItem) {
+export default function DropdownItem(props: DropdownItem): ReactElement {
     const listItemBaseClasses = [
         'w-100-percent',
         'inline-block',
@@ -41,8 +41,8 @@ export default function DropdownItem(props: DropdownItem) {
                     href={props.link}
                     onClick={props.callback ?? undefined}
                     className={props.selected
-                        ? listItemActiveClasses.join(" ")
-                        : listItemRegularClasses.join(" ")}
+                        ? listItemActiveClasses.join(' ')
+                        : listItemRegularClasses.join(' ')}
                 >
                     <span className={`flex pl-${props.level * 24}`}>
                         {props.children}
@@ -51,8 +51,8 @@ export default function DropdownItem(props: DropdownItem) {
                 <div
                     onClick={props.callback ?? undefined}
                     className={props.selected
-                        ? listItemActiveClasses.join(" ")
-                        : listItemRegularClasses.join(" ")}
+                        ? listItemActiveClasses.join(' ')
+                        : listItemRegularClasses.join(' ')}
                 >
                     <span className={`flex pl-${props.level * 24}`}>
                         {props.children}

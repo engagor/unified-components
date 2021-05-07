@@ -1,5 +1,5 @@
-import React  from "react";
-import "@clarabridge/unified-ui-tailwind/dist/utilities.css";
+import React, { ReactElement } from 'react';
+import '@clarabridge/unified-ui-tailwind/dist/utilities.css';
 
 export type DropdownProps = {
     isOpen: boolean;
@@ -8,7 +8,7 @@ export type DropdownProps = {
         | React.ReactChild[];
 };
 
-export default function Dropdown(props: DropdownProps) {
+export default function Dropdown(props: DropdownProps): ReactElement {
     return (
         <div
             aria-haspopup="listbox"
@@ -21,4 +21,4 @@ export default function Dropdown(props: DropdownProps) {
             {props.children}
         </div>
     );
-};
+}

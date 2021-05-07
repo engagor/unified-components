@@ -13,9 +13,9 @@ jest.mock(
 
 import React, { ReactElement } from 'react';
 import renderer from 'react-test-renderer';
-import Dropdown from "./Dropdown";
-import DropdownItem from "./DropdownItem";
-import Divider from "./Divider";
+import Dropdown from './Dropdown';
+import DropdownItem from './DropdownItem';
+import Divider from './Divider';
 
 it('renders correctly', async () => {
     const element = document.createElement('div');
@@ -26,7 +26,7 @@ it('renders correctly', async () => {
             <DropdownItem level={1}>Test 1</DropdownItem>
             <DropdownItem level={0}>Test 3</DropdownItem>
             <DropdownItem level={0}>Test 4</DropdownItem>
-            <Divider />
+            <Divider/>
             <DropdownItem level={0}>Test 5</DropdownItem>
         </Dropdown>)
         .toJSON();
