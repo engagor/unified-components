@@ -35,7 +35,7 @@ export default function DropdownItem(props: DropdownItem) {
     ];
 
     return (
-        <div role="option" aria-selected={props.selected}>
+        <div role="option" aria-selected={props.selected} tabIndex={0}>
             {props.link ?
                 <a
                     href={props.link}

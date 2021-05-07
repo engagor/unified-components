@@ -1,9 +1,9 @@
-import React from "react";
+import React  from "react";
 import "@clarabridge/unified-ui-tailwind/dist/utilities.css";
 
 export type DropdownProps = {
     isOpen: boolean;
-    children?:
+    children:
         | React.ReactChild
         | React.ReactChild[];
 };
@@ -11,7 +11,6 @@ export type DropdownProps = {
 export default function Dropdown(props: DropdownProps) {
     return (
         <div
-            aria-role="listbox"
             aria-haspopup="listbox"
             aria-live="polite"
             aria-atomic="true"
