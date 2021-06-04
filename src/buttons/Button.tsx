@@ -1,4 +1,4 @@
-import '@clarabridge/unified-ui-tailwind/dist/buttons.css';
+import '@clarabridge/unified-ui/dist/buttons.css';
 import React, { PropsWithChildren, ReactElement } from "react";
 
 export type ButtonProps = {

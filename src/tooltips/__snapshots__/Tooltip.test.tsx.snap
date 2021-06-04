@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<button>
+  Trigger
+</button>
+`;
+
+exports[`renders correctly 2`] = `
+<div>
+  <div
+    data-tippy-root=""
+    id="tippy-1"
+    style="pointer-events: none; z-index: 9999; transition: none; position: absolute; left: 0px; top: 0px; margin: 0px; bottom: 0px; transform: translate(0px, -10px);"
+  >
+    <article
+      class="bg-charcoal-color-400 box-shadow-default rounded-4 w-max-280 p-8"
+      data-escaped=""
+      data-placement="top"
+      data-reference-hidden=""
+      role="tooltip"
+    >
+      <section
+        class="text-base font-normal text-white"
+      >
+        Hello this is my awesome tooltip!
+      </section>
+      <div
+        class="arrow text-charcoal-color-400"
+      />
+    </article>
+  </div>
+</div>
+`;

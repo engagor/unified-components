@@ -1,23 +1,19 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
 
-import '../css/components.css';
-import Button, { ButtonProps } from '../buttons/Button';
-import ButtonGroup, { ButtonGroupProps } from '../buttons/ButtonGroup';
+import '../src/css/components.css';
+import LinkButton, {LinkButtonProps} from "../src/buttons/LinkButton";
 
 export default {
-    title: 'Button',
-    component: Button,
+    title: 'LinkButton',
+    component: LinkButton,
     args: {
         mode: 'primary',
         size: 'normal',
-        type: 'button',
     },
 } as Meta;
 
-const TemplateButton: Story<ButtonProps> = (args) => <Button {...args}>Button</Button>;
-
-const TemplateButtonGroup: Story<ButtonGroupProps> = (args) => <ButtonGroup><Button className='mr-8' mode='secondary' type='button'>Cancel</Button><Button mode='primary' type='button'>Submit</Button></ButtonGroup>;
+const TemplateButton: Story<LinkButtonProps> = (args) => <LinkButton {...args}>Button</LinkButton>;
 
 export const Default = TemplateButton.bind({});
 export const Primary = TemplateButton.bind({});
@@ -25,8 +21,6 @@ export const Secondary = TemplateButton.bind({});
 export const Danger = TemplateButton.bind({});
 
 export const Small = TemplateButton.bind({});
-
-export const Group = TemplateButtonGroup.bind({});
 
 Default.args = { mode: 'default' };
 Primary.args = { mode: 'primary' };
