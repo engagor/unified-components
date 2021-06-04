@@ -1,14 +1,16 @@
 import './css/components.css';
-import './css/tooltip.css';
+import '@clarabridge/unified-ui/dist/utilities.css';
 
 import Button from './buttons/Button';
-import ButtonGroup from './buttons/ButtonGroup';
 import SwitchButton from './buttons/SwitchButton';
 import LinkButton from './buttons/LinkButton';
+import Tooltip from './tooltips/Tooltip';
+import HelpText from './tooltips/HelpText';
 
 export {
     Button,
     SwitchButton,
-    ButtonGroup,
-    LinkButton
+    LinkButton,
+    Tooltip,
+    HelpText
 };

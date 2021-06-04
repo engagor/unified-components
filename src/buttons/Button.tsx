@@ -1,5 +1,5 @@
 import '@clarabridge/unified-ui/dist/buttons.css';
-import React, { PropsWithChildren, ReactElement } from "react";
+import React, { PropsWithChildren, ReactElement } from 'react';
 
 export type ButtonProps = {
     mode: 'default' | 'primary' | 'secondary' | 'danger';
