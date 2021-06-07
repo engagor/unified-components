@@ -7,30 +7,6 @@
 }
 
 /**
- * Line height
- */
-
-.leading-0 {
-    line-height: 0 !important;
-}
-
-.leading-base {
-    line-height: 1rem !important;
-}
-
-.leading-sm-1 {
-    line-height: 0.85rem !important;
-}
-
-/**
- * Outline
- */
-
-.outline-none {
-    outline: none !important;
-}
-
-/**
  * Width
  */
 
@@ -40,13 +16,4 @@
 
 .max-w-500 {
     max-width: 500px !important;
-}
-
-
-/**
- * Text manipulations
- */
-
-.break-word {
-    word-break: break-word;
 }

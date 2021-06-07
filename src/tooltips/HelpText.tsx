@@ -24,8 +24,8 @@ export default function HelpText({ title, content, appendTo, placement, visible,
 
     if (!children) {
         const classNames = [
-            'd-flex',
-            'align-items-center',
+            'flex',
+            'items-center',
             'justify-center',
             'bg-charcoal-color-200',
             'rounded-full',
@@ -37,7 +37,7 @@ export default function HelpText({ title, content, appendTo, placement, visible,
             'cursor-pointer',
         ];
 
-        children = <span className={`${classNames.join(' ')}}`}>?</span>;
+        children = <span className={`${classNames.join(' ')}`}>?</span>;
     }
 
     if (!isValidElement(children)) {
