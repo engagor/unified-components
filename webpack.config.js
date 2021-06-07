@@ -36,7 +36,15 @@ module.exports = {
             chunkFilename: '[id].css',
         }),
         new PurgecssPlugin({
-            paths: glob.sync('./src/**/*',  { nodir: true }),
+            paths: glob.sync(
+                './src/**/*',
+                {
+                    nodir: true,
+                }
+            ),
+            safelist: {
+                greedy: [/--\w*$/]
+            }
         }),
     ],
     optimization: {
