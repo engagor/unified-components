@@ -6,11 +6,19 @@ import SwitchButton from './buttons/SwitchButton';
 import LinkButton from './buttons/LinkButton';
 import Tooltip from './tooltips/Tooltip';
 import HelpText from './tooltips/HelpText';
+import Modal from './modals/Modal';
+import ModalBody from './modals/ModalBody';
+import ModalHeader from './modals/ModalHeader';
+import ModalFooter from './modals/ModalFooter';
 
 export {
     Button,
     SwitchButton,
     LinkButton,
     Tooltip,
-    HelpText
+    HelpText,
+    Modal,
+    ModalHeader,
+    ModalBody,
+    ModalFooter
 };

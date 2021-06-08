@@ -40,7 +40,7 @@
     "homepage": "https://github.com/engagor/unified-components-react#readme",
     "dependencies": {
         "@clarabridge/unified-icons": "^8.1.0",
-        "@clarabridge/unified-ui": "^6.0.0-alpha.5",
+        "@clarabridge/unified-ui": "^6.0.0-alpha.7",
         "@tippyjs/react": "^4.2.5",
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
@@ -75,6 +75,7 @@
         "purgecss-webpack-plugin": "^4.0.3",
         "react-docgen-typescript": "^1.21.0",
         "react-test-renderer": "^17.0.2",
+        "storybook-dark-mode": "^1.0.7",
         "terser-webpack-plugin": "^4.2.3",
         "ts-jest": "^26.5.5",
         "ts-loader": "^8.0.17",

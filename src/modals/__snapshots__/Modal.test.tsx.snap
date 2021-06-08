@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<dialog
+  aria-labelledby="modal-header"
+  className="modal modal--medium"
+>
+  <header
+    className="modal__header modal__header--default"
+  >
+    <h2
+      className="modal__header__title"
+    >
+      Modal header
+    </h2>
+    <button
+      aria-label="Close modal"
+      className="modal__header__dismiss"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        aria-hidden="true"
+        className="en-icon en-icon-delete-3"
+      />
+    </button>
+  </header>
+  <section
+    className="modal__body"
+  >
+    <p
+      className="text-black dark:text-white m-0"
+    >
+      Here comes the body
+    </p>
+  </section>
+  <footer
+    className="modal__footer"
+  >
+    <div
+      className="flex justify-end w-100-percent"
+    >
+      <button
+        className="btn btn--secondary mr-8"
+        mode="secondary"
+        type="button"
+      >
+        Cancel
+      </button>
+      <button
+        className="btn btn--primary "
+        mode="primary"
+        type="button"
+      >
+        Save
+      </button>
+    </div>
+  </footer>
+</dialog>
+`;
