@@ -1,20 +1,20 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PurgecssPlugin = require('purgecss-webpack-plugin')
-const TerserPlugin = require("terser-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
-const path = require('path')
-const glob = require('glob')
+const path = require('path');
+const glob = require('glob');
 
 module.exports = {
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "index.js",
+        filename: 'index.js',
         libraryTarget: 'umd',
     },
     resolve: {
-        extensions: [".ts", ".tsx", ".js", ".css"]
+        extensions: ['.ts', '.tsx', '.js', '.css']
     },
     module: {
         rules: [
@@ -27,7 +27,7 @@ module.exports = {
                     'css-loader'
                 ],
             },
-            { test: /\.tsx?$/, loader: "ts-loader" }
+            { test: /\.tsx?$/, loader: 'ts-loader' }
         ],
     },
     plugins: [
@@ -36,7 +36,15 @@ module.exports = {
             chunkFilename: '[id].css',
         }),
         new PurgecssPlugin({
-            paths: glob.sync(`./src/**/*`,  { nodir: true }),
+            paths: glob.sync(
+                './src/**/*',
+                {
+                    nodir: true,
+                }
+            ),
+            safelist: {
+                greedy: [/--\w*$/]
+            }
         }),
     ],
     optimization: {

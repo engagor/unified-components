@@ -1,4 +1,4 @@
-import '@clarabridge/unified-ui-tailwind/dist/switch-buttons.css';
+import '@clarabridge/unified-ui/dist/switch-buttons.css';
 import React, { PropsWithChildren, ReactElement } from 'react';
 
 export type SwitchButtonProps = {
@@ -9,7 +9,7 @@ export type SwitchButtonProps = {
 };
 
 export default function SwitchButton(props: PropsWithChildren<SwitchButtonProps>): ReactElement {
-    let switchButtonClassNames = ['switch-btn', `switch-btn--${props.checked ? 'checked' : 'unchecked'}`];
+    const switchButtonClassNames = ['switch-btn', `switch-btn--${props.checked ? 'checked' : 'unchecked'}`];
 
     if (props.className) {
         switchButtonClassNames.push(props.className);

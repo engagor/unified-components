@@ -1,8 +1,8 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
 
-import '../css/components.css';
-import SwitchButton, { SwitchButtonProps } from '../buttons/SwitchButton';
+import '../src/css/components.css';
+import SwitchButton, { SwitchButtonProps } from '../src/buttons/SwitchButton';
 
 export default {
     title: 'SwitchButton',

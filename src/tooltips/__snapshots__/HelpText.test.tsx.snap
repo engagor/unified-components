@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<span
+  className="flex items-center justify-center bg-charcoal-color-200 rounded-full text-white font-bold w-16 h-16 text-sm-2 cursor-pointer"
+>
+  ?
+</span>
+`;
+
+exports[`renders correctly 2`] = `
+<div>
+  <div
+    data-tippy-root=""
+    id="tippy-1"
+    style="pointer-events: none; z-index: 9999; transition: none; position: absolute; left: 0px; top: 0px; margin: 0px; transform: translate(10px, 0px);"
+  >
+    <article
+      class="bg-white box-shadow-default rounded-4 w-max-280 p-16"
+      data-escaped=""
+      data-placement="right"
+      data-reference-hidden=""
+      role="tooltip"
+    >
+      <section
+        class="text-base font-normal"
+      >
+        Hello this is my awesome helptext!
+      </section>
+      <div
+        class="arrow "
+      />
+    </article>
+  </div>
+</div>
+`;

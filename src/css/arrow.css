@@ -1,0 +1,58 @@
+[data-placement^=top] > .arrow {
+    bottom: 0
+}
+
+[data-placement^=top] > .arrow:before {
+    bottom: -7px;
+    left: 0;
+    border-width: 8px 8px 0;
+    border-top-color: initial;
+    transform-origin: center;
+}
+
+[data-placement^=bottom] > .arrow {
+    top: 0
+}
+
+[data-placement^=bottom] > .arrow:before {
+    top: -7px;
+    left: 0;
+    border-width: 0 8px 8px;
+    border-bottom-color: initial;
+    transform-origin: center;
+}
+
+[data-placement^=left] > .arrow {
+    right: 0
+}
+
+[data-placement^=left] > .arrow:before {
+    border-width: 8px 0 8px 8px;
+    border-left-color: initial;
+    right: -7px;
+    transform-origin: center;
+}
+
+[data-placement^=right] > .arrow {
+    left: 0
+}
+
+[data-placement^=right] > .arrow:before {
+    left: -7px;
+    border-width: 8px 8px 8px 0;
+    border-right-color: initial;
+    transform-origin: center;
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    color: #fff;
+}
+
+.arrow:before {
+    content: "";
+    position: absolute;
+    border-color: transparent;
+    border-style: solid
+}

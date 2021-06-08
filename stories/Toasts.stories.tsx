@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
-import Toast, { ToastMode, ToastProps } from '../alerts/Toast';
+import Toast, { ToastMode, ToastProps } from '../src/alerts/Toast';
 
 export default {
     title: 'Toast',

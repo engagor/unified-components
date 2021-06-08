@@ -1,5 +1,6 @@
 # generated sass/css files
 src/
+stories/
 
 .storybook/
 .env
@@ -8,6 +9,7 @@ tsconfig.json
 .editorconfig
 .eslintrc.js
 .gitignore
+.eslintcache
 
 # mac files
 *.DS_Store
