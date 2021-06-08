@@ -1,11 +1,11 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
-import Modal, { ModalProps } from '../modals/Modal';
-import ModalHeader, { ModalHeaderProps } from '../modals/ModalHeader';
-import ModalBody, { ModalBodyProps } from '../modals/ModalBody';
-import ModalFooter from '../modals/ModalFooter';
-import Button from '../buttons/Button';
-import ButtonGroup from '../buttons/ButtonGroup';
+import Modal, { ModalProps } from '../src/modals/Modal';
+import ModalHeader, { ModalHeaderProps } from '../src/modals/ModalHeader';
+import ModalBody, { ModalBodyProps } from '../src/modals/ModalBody';
+import ModalFooter from '../src/modals/ModalFooter';
+import Button from '../src/buttons/Button';
+import ButtonGroup from '../src/buttons/ButtonGroup';
 
 export default {
     title: 'Modal',
@@ -23,16 +23,12 @@ export default {
 
 const Template: Story<ModalProps & ModalHeaderProps & ModalBodyProps> = (args) => (
     <Modal size={args.size} aria-labelledby="modal-header">
-        <ModalHeader mode={args.mode} onClose={args.onClose}>
-            <h2 id="modal-header" className="text-base leading-base m-0 font-normal">
-                Modal header
-            </h2>
-        </ModalHeader>
+        <ModalHeader mode={args.mode} onClose={args.onClose}>Modal header</ModalHeader>
         <ModalBody>
-            <p className='text-black dark:text-white'>Here comes the body</p>
+            <p className="text-black dark:text-white m-0">Here comes the body</p>
         </ModalBody>
         <ModalFooter>
-            <ButtonGroup className="justify-end w-full">
+            <ButtonGroup className="justify-end w-100-percent">
                 <Button mode="secondary" type="button" className="mr-8">Cancel</Button>
                 <Button mode="primary" type="button">Save</Button>
             </ButtonGroup>

@@ -1,4 +1,4 @@
-import '@clarabridge/unified-ui-tailwind/dist/modals.css';
+import '@clarabridge/unified-ui/dist/modals.css';
 import React, { PropsWithChildren, ReactElement } from 'react';
 
 export type ModalFooterProps  = PropsWithChildren<
