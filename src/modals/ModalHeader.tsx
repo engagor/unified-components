@@ -13,7 +13,7 @@ export default function ModalHeader(props: ModalHeaderProps): ReactElement {
 
     return (
         <header className={`modal__header modal__header--${mode}`}>
-            <h2 className="modal__header__title">{props.children}</h2>
+            <h2 id="modal-header" className="modal__header__title">{props.children}</h2>
             <button className="modal__header__dismiss" type="button" aria-label="Close modal" onClick={props.onClose}>
                 <span className="en-icon en-icon-delete-3" aria-hidden="true" />
             </button>

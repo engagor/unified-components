@@ -22,7 +22,7 @@ export default {
 } as Meta;
 
 const Template: Story<ModalProps & ModalHeaderProps & ModalBodyProps> = (args) => (
-    <Modal size={args.size} aria-labelledby="modal-header">
+    <Modal isOpen={args.isOpen} size={args.size} aria-labelledby="modal-header">
         <ModalHeader mode={args.mode} onClose={args.onClose}>Modal header</ModalHeader>
         <ModalBody>
             <p className="text-black dark:text-white m-0">Here comes the body</p>

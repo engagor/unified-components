@@ -1,60 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<dialog
-  aria-labelledby="modal-header"
-  className="modal modal--medium"
->
-  <header
-    className="modal__header modal__header--default"
+exports[`renders correctly when modal is closed 1`] = `null`;
+
+exports[`renders correctly when modal is closed 2`] = `<div />`;
+
+exports[`renders correctly when modal is open 1`] = `null`;
+
+exports[`renders correctly when modal is open 2`] = `
+<div>
+  <dialog
+    aria-labelledby="modal-header"
+    class="modal modal--medium"
   >
-    <h2
-      className="modal__header__title"
+    <header
+      class="modal__header modal__header--default"
     >
-      Modal header
-    </h2>
-    <button
-      aria-label="Close modal"
-      className="modal__header__dismiss"
-      onClick={[Function]}
-      type="button"
-    >
-      <span
-        aria-hidden="true"
-        className="en-icon en-icon-delete-3"
-      />
-    </button>
-  </header>
-  <section
-    className="modal__body"
-  >
-    <p
-      className="text-black dark:text-white m-0"
-    >
-      Here comes the body
-    </p>
-  </section>
-  <footer
-    className="modal__footer"
-  >
-    <div
-      className="flex justify-end w-100-percent"
-    >
+      <h2
+        class="modal__header__title"
+        id="modal-header"
+      >
+        Modal header
+      </h2>
       <button
-        className="btn btn--secondary mr-8"
-        mode="secondary"
+        aria-label="Close modal"
+        class="modal__header__dismiss"
         type="button"
       >
-        Cancel
+        <span
+          aria-hidden="true"
+          class="en-icon en-icon-delete-3"
+        />
       </button>
-      <button
-        className="btn btn--primary "
-        mode="primary"
-        type="button"
+    </header>
+    <section
+      class="modal__body"
+    >
+      <p
+        class="text-black dark:text-white m-0"
       >
-        Save
-      </button>
-    </div>
-  </footer>
-</dialog>
+        Here comes the body
+      </p>
+    </section>
+    <footer
+      class="modal__footer"
+    >
+      <div
+        class="flex justify-end w-100-percent"
+      >
+        <button
+          class="btn btn--secondary mr-8"
+          mode="secondary"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          class="btn btn--primary "
+          mode="primary"
+          type="button"
+        >
+          Save
+        </button>
+      </div>
+    </footer>
+  </dialog>
+  <div
+    class="modal-backdrop"
+  />
+</div>
 `;
