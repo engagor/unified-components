@@ -1,14 +1,14 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import React from 'react';
-import Toast, { ToastMode, ToastProps } from '../src/alerts/Toast';
+import Notice, { ToastMode, ToastProps } from '../src/alerts/Notice';
 
 export default {
-    title: 'Toast',
-    component: Toast,
+    title: 'Notice',
+    component: Notice,
 } as Meta;
 
 const Template: Story<ToastProps> = (args) => (
-    <Toast {...args}>Are you sure?</Toast>
+    <Notice {...args}>Are you sure?</Notice>
 );
 
 export const Confirmation = Template.bind({});

@@ -24,20 +24,17 @@ export default function HelpText({ title, content, appendTo, placement, visible,
 
     if (!children) {
         const classNames = [
-            'flex',
-            'items-center',
-            'justify-center',
-            'bg-charcoal-color-200',
-            'rounded-full',
-            'text-white',
-            'font-bold',
+            'text-charcoal-color-200',
             'w-16',
             'h-16',
-            'text-sm-2',
             'cursor-pointer',
         ];
 
-        children = <span className={`${classNames.join(' ')}`}>?</span>;
+        children = (
+            <span className={`${classNames.join(' ')}`}>
+                <span aria-hidden={true} className="en-icon en-icon-help"></span>
+            </span>
+        );
     }
 
     if (!isValidElement(children)) {
@@ -63,10 +60,10 @@ export default function HelpText({ title, content, appendTo, placement, visible,
                     }
 
                     return (
-                        <article className="bg-white box-shadow-default rounded-4 w-max-280 p-16" role="tooltip" {...attrs}>
+                        <article className="shadow bg-white dark:bg-charcoal-color-400 dark:text-white dark:border-color-400 rounded-4 w-max-280 p-16" role="tooltip" {...attrs}>
                             {title}
                             <section className="text-base font-normal">{content}</section>
-                            <Arrow ref={(node) => setArrow(node)} />
+                            <Arrow className="text-white dark:text-charcoal-color-400" ref={(node) => setArrow(node)} />
                         </article>
                     );
                 }

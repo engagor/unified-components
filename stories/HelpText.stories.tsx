@@ -24,7 +24,6 @@ const Template: Story<HelpTextProps> = (args) => {
                 <li>Workload based assigning (sending cases to those users with the least amount of assigned cases. Note that we only execute this strategy when the candidates in the rule don't have access to more than 20 topics)</li>
                 <li>Random assigning (when the above strategy doesn't return a candidate)</li>
             </ul>
-            <a href="#" target="_blank" rel="noopener noreferrer">(Read more ...)</a>
         </Fragment>
     );
 
