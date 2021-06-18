@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when modal is closed 1`] = `null`;
+
+exports[`renders correctly when modal is closed 2`] = `<div />`;
+
+exports[`renders correctly when modal is open 1`] = `null`;
+
+exports[`renders correctly when modal is open 2`] = `
+<div>
+  <dialog
+    aria-labelledby="modal-header"
+    class="modal modal--medium"
+  >
+    <header
+      class="modal__header modal__header--default"
+    >
+      <h2
+        class="modal__header__title"
+        id="modal-header"
+      >
+        Modal header
+      </h2>
+      <button
+        aria-label="Close modal"
+        class="modal__header__dismiss"
+        type="button"
+      >
+        <span
+          aria-hidden="true"
+          class="en-icon en-icon-delete-3"
+        />
+      </button>
+    </header>
+    <section
+      class="modal__body"
+    >
+      <p
+        class="text-black dark:text-white m-0"
+      >
+        Here comes the body
+      </p>
+    </section>
+    <footer
+      class="modal__footer"
+    >
+      <div
+        class="flex justify-end w-100-percent"
+      >
+        <button
+          class="btn btn--secondary mr-8"
+          mode="secondary"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          class="btn btn--primary "
+          mode="primary"
+          type="button"
+        >
+          Save
+        </button>
+      </div>
+    </footer>
+  </dialog>
+  <div
+    class="modal-backdrop"
+  />
+</div>
+`;

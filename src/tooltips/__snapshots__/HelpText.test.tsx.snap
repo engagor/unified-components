@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <span
-  className="d-flex align-items-center justify-center bg-charcoal-color-200 rounded-full text-white font-bold w-16 h-16 text-sm-2 cursor-pointer}"
+  className="flex items-center justify-center bg-charcoal-color-200 rounded-full text-white font-bold w-16 h-16 text-sm-2 cursor-pointer"
 >
   ?
 </span>

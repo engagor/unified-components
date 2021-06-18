@@ -6,7 +6,7 @@ export type ButtonGroupProps = {
 
 export default function ButtonGroup (props: PropsWithChildren<ButtonGroupProps>): ReactElement {
     return (
-        <div className={`d-flex ${props.className || ''}`}>
+        <div className={`flex ${props.className || ''}`}>
             {props.children}
         </div>
     );

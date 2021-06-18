@@ -40,11 +40,12 @@ const stylesPerMode: Record<string, Record<string, string[]>> = {
     },
 }
 
-const Toast = (props: PropsWithChildren<ToastProps>): ReactElement => {
+const Notice = (props: PropsWithChildren<ToastProps>): ReactElement => {
     const toastClasses = [
         'text-white',
-        'p-static',
-        'd-flex',
+        'static',
+        'flex',
+        'justify-between',
         'p-8',
         'border-0',
         'rounded-2',
@@ -57,18 +58,20 @@ const Toast = (props: PropsWithChildren<ToastProps>): ReactElement => {
     let dismissButton = null;
 
     if (props.dismissible) {
-        dismissButton = <span className="en-icon en-icon-delete-3 ml-auto" />
+        dismissButton = <span className="en-icon en-icon-delete-3" />
     }
 
     return (
         <dialog {...props} className={`${toastClasses.join(' ')} ${props.className || ''}`}>
-            <span className={`${stylesPerMode[props.mode].icon.join(' ')} d-inline`} />
-            <section className="text-sm-1 mh-8 mv-0 d-inline break-word">
-                {props.children}
-            </section>
+            <div className="flex flex-1">
+                <span className={`${stylesPerMode[props.mode].icon.join(' ')}`} />
+                <section className="text-sm-1 mx-8 my-0 d-inline break-word">
+                    {props.children}
+                </section>
+            </div>
             {dismissButton}
         </dialog>
     );
 }
 
-export default Toast
+export default Notice
