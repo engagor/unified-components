@@ -42,7 +42,7 @@ export default function Tooltip({ content, appendTo, placement, visible, childre
             render={
                 (attrs) => {
                     return (
-                        <article className="bg-charcoal-color-400 box-shadow-default rounded-4 w-max-280 p-8" role="tooltip" {...attrs}>
+                        <article className="bg-charcoal-color-400 shadow rounded-4 w-max-280 p-8" role="tooltip" {...attrs}>
                             <section className="text-base font-normal text-white">{content}</section>
                             <Arrow ref={(node) => setArrow(node)} className="text-charcoal-color-400" />
                         </article>

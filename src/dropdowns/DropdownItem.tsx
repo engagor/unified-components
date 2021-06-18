@@ -1,10 +1,11 @@
 import React, { ReactElement } from 'react';
+import '@clarabridge/unified-ui/dist/utilities.css';
 
 type DropdownItem = {
     level: number;
     selected?: boolean;
     link?: string,
-    callback?: (event: React.MouseEvent) => void;
+    callback?: (event: React.MouseEvent | React.KeyboardEvent) => void;
     children?:
         | React.ReactChild
         | React.ReactChild[];
@@ -24,6 +25,8 @@ export default function DropdownItem(props: DropdownItem): ReactElement {
         ...listItemBaseClasses,
         'text-charcoal-color-400',
         'hover:bg-primary-color-200',
+        'dark:text-white',
+        'dark:hover:text-charcoal-color-400',
     ];
 
     const listItemActiveClasses = [
@@ -35,11 +38,16 @@ export default function DropdownItem(props: DropdownItem): ReactElement {
     ];
 
     return (
-        <div role="option" aria-selected={props.selected} tabIndex={0}>
+        <div
+            role="option"
+            aria-selected={props.selected}
+            tabIndex={0}
+            onClick={props.callback ?? undefined}
+            onKeyDown={props.callback ?? undefined}
+        >
             {props.link ?
                 <a
                     href={props.link}
-                    onClick={props.callback ?? undefined}
                     className={props.selected
                         ? listItemActiveClasses.join(' ')
                         : listItemRegularClasses.join(' ')}
@@ -49,7 +57,6 @@ export default function DropdownItem(props: DropdownItem): ReactElement {
                     </span>
                 </a> :
                 <div
-                    onClick={props.callback ?? undefined}
                     className={props.selected
                         ? listItemActiveClasses.join(' ')
                         : listItemRegularClasses.join(' ')}

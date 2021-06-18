@@ -4,9 +4,9 @@ exports[`renders correctly 1`] = `
 <div
   aria-atomic="true"
   aria-expanded={true}
-  aria-haspopup="listbox"
   aria-live="polite"
-  className="box-shadow-default rounded-8 bg-white min-w-320 max-w-400 overflow-hidden"
+  className="shadow-md rounded-8 bg-white dark:bg-charcoal-color-500 min-w-320 max-w-400 overflow-hidden"
+  role="listbox"
   tabIndex={0}
 >
   <div
@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
     tabIndex={0}
   >
     <div
-      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200"
+      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200 dark:text-white dark:hover:text-charcoal-color-400"
     >
       <span
         className="flex pl-0"
@@ -28,7 +28,7 @@ exports[`renders correctly 1`] = `
     tabIndex={0}
   >
     <div
-      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200"
+      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200 dark:text-white dark:hover:text-charcoal-color-400"
     >
       <span
         className="flex pl-24"
@@ -42,7 +42,7 @@ exports[`renders correctly 1`] = `
     tabIndex={0}
   >
     <div
-      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200"
+      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200 dark:text-white dark:hover:text-charcoal-color-400"
     >
       <span
         className="flex pl-0"
@@ -56,7 +56,7 @@ exports[`renders correctly 1`] = `
     tabIndex={0}
   >
     <div
-      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200"
+      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200 dark:text-white dark:hover:text-charcoal-color-400"
     >
       <span
         className="flex pl-0"
@@ -66,14 +66,14 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <hr
-    className="border-0 border-b-1 border-solid border-primary-color-600 mb-8 mt-8"
+    className="border-0 border-b-1 border-solid border-primary-color-600 dark:border-charcoal-color-300 mb-8 mt-8"
   />
   <div
     role="option"
     tabIndex={0}
   >
     <div
-      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200"
+      className="w-100-percent inline-block no-underline px-16 py-8 cursor-pointer text-charcoal-color-400 hover:bg-primary-color-200 dark:text-white dark:hover:text-charcoal-color-400"
     >
       <span
         className="flex pl-0"
