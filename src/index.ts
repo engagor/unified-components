@@ -6,6 +6,9 @@ import SwitchButton from './buttons/SwitchButton';
 import LinkButton from './buttons/LinkButton';
 import Tooltip from './tooltips/Tooltip';
 import HelpText from './tooltips/HelpText';
+import Dropdown from './dropdowns/Dropdown';
+import DropdownItem from './dropdowns/DropdownItem';
+import Divider from './dropdowns/Divider';
 
 export {
     Button,
@@ -13,4 +16,7 @@ export {
     LinkButton,
     Tooltip,
     HelpText,
+    Dropdown,
+    DropdownItem,
+    Divider
 };
