@@ -28,9 +28,9 @@ export const Small = TemplateButton.bind({});
 
 export const Group = TemplateButtonGroup.bind({});
 
-Default.args = { mode: 'default' };
-Primary.args = { mode: 'primary' };
+Default.args = { };
+Primary.args = { color: 'primary' };
 Secondary.args = { mode: 'secondary' };
-Danger.args = { mode: 'danger' }
+Danger.args = { color: 'danger' }
 
 Small.args = { mode: 'primary', size: 'small' };
