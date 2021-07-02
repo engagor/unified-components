@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="rounded-full overflow-hidden inline-block"
+  role="img"
+>
+  <img
+    alt="alt_text"
+    className="block"
+    height={64}
+    loading="lazy"
+    src="https://via.placeholder.com/150"
+  />
+</div>
+`;
+
+exports[`renders correctly 2`] = `<div />`;
