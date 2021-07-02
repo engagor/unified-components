@@ -48,15 +48,13 @@ exports[`renders correctly when modal is open 2`] = `
         class="flex justify-end w-100-percent"
       >
         <button
-          class="btn btn--secondary mr-8"
-          mode="secondary"
+          class="btn btn--mode-secondary btn--color-charcoal mr-8"
           type="button"
         >
           Cancel
         </button>
         <button
-          class="btn btn--primary "
-          mode="primary"
+          class="btn btn--mode-primary btn--color-primary "
           type="button"
         >
           Save

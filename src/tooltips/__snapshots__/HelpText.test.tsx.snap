@@ -2,9 +2,12 @@
 
 exports[`renders correctly 1`] = `
 <span
-  className="flex items-center justify-center bg-charcoal-color-200 rounded-full text-white font-bold w-16 h-16 text-sm-2 cursor-pointer"
+  className="text-charcoal-color-200 w-16 h-16 cursor-pointer"
 >
-  ?
+  <span
+    aria-hidden={true}
+    className="en-icon en-icon-help"
+  />
 </span>
 `;
 
@@ -16,7 +19,7 @@ exports[`renders correctly 2`] = `
     style="pointer-events: none; z-index: 9999; transition: none; position: absolute; left: 0px; top: 0px; margin: 0px; transform: translate(10px, 0px);"
   >
     <article
-      class="bg-white box-shadow-default rounded-4 w-max-280 p-16"
+      class="shadow bg-white dark:bg-charcoal-color-400 dark:text-white dark:border-color-400 rounded-4 w-max-280 p-16"
       data-escaped=""
       data-placement="right"
       data-reference-hidden=""
@@ -28,7 +31,7 @@ exports[`renders correctly 2`] = `
         Hello this is my awesome helptext!
       </section>
       <div
-        class="arrow "
+        class="arrow text-white dark:text-charcoal-color-400"
       />
     </article>
   </div>
