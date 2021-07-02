@@ -2,7 +2,8 @@ import '@clarabridge/unified-ui/dist/buttons.css';
 import React, { PropsWithChildren, ReactElement } from 'react';
 
 export type ButtonProps = {
-    mode: 'default' | 'primary' | 'secondary' | 'danger' | 'warning';
+    mode?: 'primary' | 'secondary';
+    color?: 'charcoal' | 'primary' | 'warning' | 'danger';
     size?: 'normal' | 'small';
     className?: string;
     autoFocus?: boolean;
@@ -14,19 +15,21 @@ export type ButtonProps = {
 };
 
 export default function Button (props: PropsWithChildren<ButtonProps>): ReactElement {
-    const buttonClasses = ['btn', `btn--${props.mode}`];
+    const mode = props.mode ?? 'primary';
+    const color = props.color ?? 'charcoal';
+    const size = props.size ?? 'normal';
+
+    const buttonClasses = ['btn', `btn--size-${size}`, `btn--mode-${mode}`, `btn--color-${color}`];
 
     if (props.disabled) {
         buttonClasses.push('btn--disabled');
     }
 
-    if (props.size === 'small') {
-        buttonClasses.push('btn--small');
-    }
-
     return (
-        <button {...props}
-            className={`${buttonClasses.join(' ')} ${props.className || ''}`}>
+        <button
+            {...props}
+            className={`${buttonClasses.join(' ')} ${props.className || ''}`}
+        >
             {props.children}
         </button>
     );
