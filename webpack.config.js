@@ -43,7 +43,7 @@ module.exports = {
                 }
             ),
             safelist: {
-                greedy: [/--\w*$/]
+                greedy: [/--[\w\-]*$/]
             }
         }),
     ],
