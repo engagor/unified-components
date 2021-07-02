@@ -7,7 +7,6 @@ export type AvatarProps = {
 };
 
 export default function Avatar(avatarProps: AvatarProps): ReactElement {
-
     let width,
         height = 64;
 
