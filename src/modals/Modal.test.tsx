@@ -33,7 +33,7 @@ it('renders correctly when modal is open', async () => {
                 <ModalFooter>
                     <ButtonGroup className="justify-end w-100-percent">
                         <Button mode="secondary" type="button" className="mr-8">Cancel</Button>
-                        <Button mode="primary" type="button">Save</Button>
+                        <Button mode="primary" color="primary" type="button">Save</Button>
                     </ButtonGroup>
                 </ModalFooter>
             </Modal>

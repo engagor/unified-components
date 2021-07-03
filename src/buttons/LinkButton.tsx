@@ -12,7 +12,7 @@ export type LinkButtonProps = {
 };
 
 export default function LinkButton(props: PropsWithChildren<LinkButtonProps>): ReactElement {
-    const buttonClasses = ['btn', `btn--${props.mode}`, 'active:outline-primary-color-200'];
+    const buttonClasses = ['btn', `btn--${props.mode}`];
 
     if (props.disabled) {
         buttonClasses.push('btn--disabled');
@@ -24,6 +24,8 @@ export default function LinkButton(props: PropsWithChildren<LinkButtonProps>): R
 
     return (
         <a
+            role="button"
+            tabIndex={0}
             className={`${buttonClasses.join(' ')} ${props.className || ''}`}
             href={props.href}
             target={props.target}
