@@ -13,6 +13,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "storybook-docs": "start-storybook --docs",
+    "prebuild": "npm run lint && npm run type-check && npm run test",
     "build": "webpack --mode=production",
     "prepublishOnly": "npm run build && npm run deploy-storybook",
     "deploy-storybook": "storybook-to-ghpages",
