@@ -6,6 +6,5 @@ export type IconProps = {
 };
 
 export default function Icon(props: IconProps) {
-    return <span className={`en-icon en-icon-${props.iconName} ${props.className}`} aria-hidden="true" />
+    return <span className={`en-icon en-icon-${props.iconName} ${props.className ?? ''}`} aria-hidden="true" />
 }
-
