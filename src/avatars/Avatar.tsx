@@ -4,6 +4,7 @@ export type AvatarProps = {
     image: string;
     size: 'small' | 'medium' | 'large';
     alt: string;
+    username?: string;
 };
 
 export default function Avatar(avatarProps: AvatarProps): ReactElement {
@@ -19,8 +20,8 @@ export default function Avatar(avatarProps: AvatarProps): ReactElement {
     }
 
     return (
-        <div role="img" className="rounded-full overflow-hidden inline-block">
-            <img className="block" loading="lazy" src={avatarProps.image} alt={avatarProps.alt} width={width} height={height} />
+        <div role="img" aria-label={avatarProps.username ?? avatarProps.alt} className="rounded-full overflow-hidden inline-block">
+            <img aria-hidden="true" className="block" loading="lazy" src={avatarProps.image} alt={avatarProps.username ?? avatarProps.alt} width={width} height={height} />
         </div>
     );
 }

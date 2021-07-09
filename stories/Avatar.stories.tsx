@@ -14,5 +14,7 @@ const TemplateAvatar: Story<AvatarProps> = (args) => <Avatar {...args}/>;
 export const Default = TemplateAvatar.bind({});
 
 Default.args = {
-    image: 'https://via.placeholder.com/128'
+    image: 'https://via.placeholder.com/128',
+    username: 'Profile of Thomas',
+    alt: 'altText',
 };
