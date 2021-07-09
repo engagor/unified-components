@@ -2,11 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <div
+  aria-label="alt_text"
   className="rounded-full overflow-hidden inline-block"
   role="img"
 >
   <img
     alt="alt_text"
+    aria-hidden="true"
     className="block"
     height={64}
     loading="lazy"
