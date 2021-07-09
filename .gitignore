@@ -18,3 +18,4 @@ dist/
 
 /tmp/webpack
 /node_modules
+build-storybook.log

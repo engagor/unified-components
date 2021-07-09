@@ -22,15 +22,17 @@ const TemplateButtonGroup: Story<ButtonGroupProps> = (args) => <ButtonGroup><But
 export const Default = TemplateButton.bind({});
 export const Primary = TemplateButton.bind({});
 export const Secondary = TemplateButton.bind({});
+export const Warning = TemplateButton.bind({});
 export const Danger = TemplateButton.bind({});
 
 export const Small = TemplateButton.bind({});
 
 export const Group = TemplateButtonGroup.bind({});
 
-Default.args = { mode: 'default' };
-Primary.args = { mode: 'primary' };
+Default.args = { };
+Primary.args = { color: 'primary' };
 Secondary.args = { mode: 'secondary' };
-Danger.args = { mode: 'danger' }
+Warning.args = { color: 'warning' }
+Danger.args = { color: 'danger' }
 
 Small.args = { mode: 'primary', size: 'small' };
