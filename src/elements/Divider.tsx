@@ -6,5 +6,5 @@ export type DividerProps = {
 };
 
 export default function Divider(props: DividerProps): ReactElement {
-    return <hr className={`border-0 border-b-1 border-solid ${props.color ?? 'border-charcoal-color-200'} ${props.className}`} />
+    return <hr className={`border-0 border-b-1 border-solid ${props.color ?? 'border-charcoal-color-200'} ${props.className ?? ''}`} />
 }

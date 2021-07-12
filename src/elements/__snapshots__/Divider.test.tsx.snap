@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<hr
+  className="border-0 border-b-1 border-solid border-charcoal-color-200 "
+/>
+`;
+
+exports[`renders correctly 2`] = `<div />`;
