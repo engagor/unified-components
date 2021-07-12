@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 <span
   aria-hidden="true"
-  className="en-icon en-icon-add undefined"
+  className="en-icon en-icon-add "
 />
 `;
 
