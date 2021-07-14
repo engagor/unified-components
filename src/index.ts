@@ -6,6 +6,9 @@ import SwitchButton from './buttons/SwitchButton';
 import LinkButton from './buttons/LinkButton';
 import Tooltip from './tooltips/Tooltip';
 import HelpText from './tooltips/HelpText';
+import Avatar from './avatars/Avatar';
+import Divider from './elements/Divider';
+import Icon from './icon/Icon';
 
 export {
     Button,
@@ -13,4 +16,7 @@ export {
     LinkButton,
     Tooltip,
     HelpText,
+    Avatar,
+    Icon,
+    Divider
 };
