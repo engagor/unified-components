@@ -1,101 +1,103 @@
 {
-  "name": "@clarabridge/unified-react-components",
-  "version": "1.4.4",
-  "description": "Collection of Engage reusable components",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "jest",
-    "test-update": "jest --updateSnapshot",
-    "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx --cache --cache-strategy content",
-    "lint-fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --cache --cache-strategy content --fix",
-    "type-check": "tsc --noEmit -p tsconfig.json",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "storybook-docs": "start-storybook --docs",
-    "prebuild": "npm run lint && npm run type-check && npm run test",
-    "build": "webpack --mode=production",
-    "prepublishOnly": "npm run build && npm run deploy-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
-    "release": "npm version $TYPE -m '📦 Upgrade package to %s' && npm publish && git push && git push --tags",
-    "release-major": "TYPE=major npm run release",
-    "release-minor": "TYPE=minor npm run release",
-    "release-patch": "TYPE=patch npm run release",
-    "chromatic": "npx chromatic --project-token=7d12fc68ba2e"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/engagor/unified-components-react.git"
-  },
-  "keywords": [
-    "engage",
-    "components",
-    "react"
-  ],
-  "author": "Thomas Van Kerckvoorde <thomas.vankerckvoorde@clarabridge.com>",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "bugs": {
-    "url": "https://github.com/engagor/unified-components-react/issues"
-  },
-  "homepage": "https://github.com/engagor/unified-components-react#readme",
-  "dependencies": {
-    "@clarabridge/unified-icons": "^8.5.0",
-    "@clarabridge/unified-ui": "^6.0.0-alpha.19",
-    "@tippyjs/react": "^4.2.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@fullhuman/postcss-purgecss": "^4.0.3",
-    "@storybook/addon-a11y": "^6.2.9",
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/addon-links": "^6.2.9",
-    "@storybook/addons": "^6.2.9",
-    "@storybook/react": "^6.2.9",
-    "@storybook/storybook-deployer": "^2.8.10",
-    "@types/jest": "^26.0.23",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.7",
-    "@types/react-test-renderer": "^17.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.27.0",
-    "@typescript-eslint/parser": "^4.27.0",
-    "babel-loader": "^8.2.2",
-    "chromatic": "^5.9.2",
-    "css-minimizer-webpack-plugin": "^1.3.0",
-    "eslint": "^7.28.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.0.4",
-    "mini-css-extract-plugin": "^1.6.0",
-    "postcss": "^8.3.5",
-    "purgecss-webpack-plugin": "^4.0.3",
-    "react-docgen-typescript": "^2.0.0",
-    "react-test-renderer": "^17.0.2",
-    "storybook-dark-mode": "^1.0.7",
-    "terser-webpack-plugin": "^4.2.3",
-    "ts-jest": "^27.0.3",
-    "ts-loader": "^8.0.17",
-    "typescript": "^4.2.3",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^4.7.2"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "jsdom",
-    "transform": {
-      "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+    "name": "@clarabridge/unified-react-components",
+    "version": "1.4.4",
+    "description": "Collection of Engage reusable components",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "jest",
+        "test-update": "jest --updateSnapshot",
+        "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx --cache --cache-strategy content",
+        "lint-fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --cache --cache-strategy content --fix",
+        "type-check": "tsc --noEmit -p tsconfig.json",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook",
+        "storybook-docs": "start-storybook --docs",
+        "prebuild": "npm run lint && npm run type-check && npm run test",
+        "build": "webpack --mode=production",
+        "prepublishOnly": "npm run build && npm run deploy-storybook",
+        "deploy-storybook": "storybook-to-ghpages",
+        "release": "npm version $TYPE -m '📦 Upgrade package to %s' && npm publish && git push && git push --tags",
+        "release-major": "TYPE=major npm run release",
+        "release-minor": "TYPE=minor npm run release",
+        "release-patch": "TYPE=patch npm run release",
+        "chromatic": "npx chromatic --project-token=7d12fc68ba2e"
     },
-    "transformIgnorePatterns": [
-      "node_modules/(?!variables/.*)"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/engagor/unified-components-react.git"
+    },
+    "keywords": [
+        "engage",
+        "components",
+        "react"
     ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "identity-obj-proxy"
+    "author": "Thomas Van Kerckvoorde <thomas.vankerckvoorde@clarabridge.com>",
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "bugs": {
+        "url": "https://github.com/engagor/unified-components-react/issues"
+    },
+    "homepage": "https://github.com/engagor/unified-components-react#readme",
+    "peerDependencies": {
+        "react": ">=17.0.2",
+        "react-dom": ">=17.0.2",
+        "@clarabridge/unified-icons": ">=8.5.0",
+        "@clarabridge/unified-ui": ">=6.0.0-alpha.19"
+    },
+    "dependencies": {
+        "@tippyjs/react": "^4.2.5"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.14.6",
+        "@fullhuman/postcss-purgecss": "^4.0.3",
+        "@storybook/addon-a11y": "^6.2.9",
+        "@storybook/addon-actions": "^6.2.9",
+        "@storybook/addon-essentials": "^6.2.9",
+        "@storybook/addon-links": "^6.2.9",
+        "@storybook/addons": "^6.2.9",
+        "@storybook/react": "^6.2.9",
+        "@storybook/storybook-deployer": "^2.8.10",
+        "@types/jest": "^26.0.23",
+        "@types/react": "^17.0.11",
+        "@types/react-dom": "^17.0.7",
+        "@types/react-test-renderer": "^17.0.1",
+        "@typescript-eslint/eslint-plugin": "^4.27.0",
+        "@typescript-eslint/parser": "^4.27.0",
+        "babel-loader": "^8.2.2",
+        "chromatic": "^5.9.2",
+        "css-minimizer-webpack-plugin": "^1.3.0",
+        "eslint": "^7.28.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.24.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^27.0.4",
+        "mini-css-extract-plugin": "^1.6.0",
+        "postcss": "^8.3.5",
+        "purgecss-webpack-plugin": "^4.0.3",
+        "react-docgen-typescript": "^2.0.0",
+        "react-test-renderer": "^17.0.2",
+        "storybook-dark-mode": "^1.0.7",
+        "terser-webpack-plugin": "^4.2.3",
+        "ts-jest": "^27.0.3",
+        "ts-loader": "^8.0.17",
+        "typescript": "^4.2.3",
+        "webpack": "^4.46.0",
+        "webpack-cli": "^4.7.2"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "jsdom",
+        "transform": {
+            "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+        },
+        "transformIgnorePatterns": [
+            "node_modules/(?!variables/.*)"
+        ],
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+            "\\.(css|less)$": "identity-obj-proxy"
+        }
     }
-  }
 }
