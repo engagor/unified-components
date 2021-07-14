@@ -19,7 +19,7 @@ exports[`renders correctly 2`] = `
     style="pointer-events: none; z-index: 9999; transition: none; position: absolute; left: 0px; top: 0px; margin: 0px; transform: translate(10px, 0px);"
   >
     <article
-      class="shadow bg-white dark:bg-charcoal-color-400 dark:text-white dark:border-color-400 rounded-4 w-max-280 p-16"
+      class="shadow bg-white dark:bg-charcoal-color-400 dark:text-white dark:border-color-400 rounded-4 max-w-280 p-16"
       data-escaped=""
       data-placement="right"
       data-reference-hidden=""

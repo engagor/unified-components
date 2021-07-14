@@ -60,7 +60,7 @@ export default function HelpText({ title, content, appendTo, placement, visible,
                     }
 
                     return (
-                        <article className="shadow bg-white dark:bg-charcoal-color-400 dark:text-white dark:border-color-400 rounded-4 w-max-280 p-16" role="tooltip" {...attrs}>
+                        <article className="shadow bg-white dark:bg-charcoal-color-400 dark:text-white dark:border-color-400 rounded-4 max-w-280 p-16" role="tooltip" {...attrs}>
                             {title}
                             <section className="text-base font-normal">{content}</section>
                             <Arrow className="text-white dark:text-charcoal-color-400" ref={(node) => setArrow(node)} />
